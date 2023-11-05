@@ -1,0 +1,41 @@
+body {
+    background-color: black;
+    color: gold;
+    text-align: center;
+    margin: 1em;
+}
+
+.tech_stack {
+    display: block;
+}
+
+.resources ul {
+    list-style: none;
+}
+
+.design_goals ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navlist {padding:0}
+
+a:link {
+    color: lightblue;
+}
+  
+/* visited link */
+a:visited {
+color: white;
+}
+
+/* mouse over link */
+a:hover {
+color: blue;
+}
+
+/* selected link */
+a:active {
+color: blue;
+}
