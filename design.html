@@ -37,5 +37,34 @@
                 <li>Player freedom and choice</li>
             </ul>
         </div>
+        <h2>How will it work?</h2>
+        <h3>Database Design</h3>
+        <p>
+            - Main DB (to hold imortant data for each account)<br>
+            - Auth DB (to hold important account info)<br>
+            - per World DB (to hold important data for each world)<br>
+        </p>
+        <h3>Server Design</h3>
+        <p>
+            - Data server (to handle character and other non-per world information transfers)<br>
+            - Data edit server (to handle edits to the databases)
+            - Auth server (to handle authentication)<br>
+            - per World server (to handle per world networking)<br>
+        </p>
+        <h3>Game server main loop</h3>
+
+            - Server checks for updates from clients <br>
+            - Server updates <br>
+            - Server pushes updates to relevant clients <br>
+        </p>
+        <h3>Game client main loop</h3>
+        <p>
+            - Client checks for updates from the Server listener <br>
+            - Client replicates updates <br>
+            - Client renders <br>
+            - Client polls user input <br>
+            - Client updates <br>
+            - Client pushes updates to server <br>
+        </p>
     </body>
 </html>
